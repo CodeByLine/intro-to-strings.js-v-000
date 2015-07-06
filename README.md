@@ -78,7 +78,17 @@ phoneNumber.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2 - $3');
 
 ## Turn String to Number
 
-TODO
+There are a couple different ways to turn a string into a number. Here are a couple:
+
+```javascript
+var x = "78";
+
+Number(x);
+// => 78
+
+parseInt(x, 10);
+// => 78
+```
 
 ## Splice
 
@@ -90,5 +100,6 @@ TODO
 
 ## Resources
 
+* [Codecademy -  Strings](http://www.codecademy.com/glossary/javascript/strings)
 * [StackOverflow - Capitalize the first letter of string](http://stackoverflow.com/a/1026087/2890716)
 * [StackOverflow - Replacing all occurrences of a string in JavaScript](http://stackoverflow.com/a/1144788/2890716)
