@@ -7,7 +7,7 @@
 * Changing Case
 * Replacing Characters
 * Turn String to Number
-* Splice
+* Slice
 * Split
 * Resources
 
@@ -90,16 +90,32 @@ parseInt(x, 10);
 // => 78
 ```
 
-## Splice
+## Slice
 
-TODO
+The `slice()` method extracts a section of a string and returns a new string. It accepts one required parameter, the index to start on, and one optional parameter, the index to end on.
+
+```javascript
+var bushism = "They misunderestimated me.";
+var word = bushism.slice(5, -4);
+
+// the line below prints "misunderestimated"
+console.log(word); 
+```
 
 ## Split
 
-TODO
+The split() method splits a String object into an array of strings by separating the string into substrings.
+
+```javascript
+var longString = "Jan,Feb,Mar,Apr,May,Jun";
+var months = longString.split(",");
+
+// months is now ["Jan","Feb","Mar","Apr","May","Jun"]
+```
 
 ## Resources
 
 * [Codecademy -  Strings](http://www.codecademy.com/glossary/javascript/strings)
+* [StackOverflow - What's the fastest way to convert String to Number in JavaScript?](http://stackoverflow.com/a/12862627/2890716)
 * [StackOverflow - Capitalize the first letter of string](http://stackoverflow.com/a/1026087/2890716)
 * [StackOverflow - Replacing all occurrences of a string in JavaScript](http://stackoverflow.com/a/1144788/2890716)
