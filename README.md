@@ -55,7 +55,7 @@ To replace characters with new characters, you can use the `replace()` method. I
 
 ```javascript
 "pandas have two compound eyes and a proboscis".replace("pandas", "butterflies");
-// => "butterflies have two antennae, two compound eyes, and a proboscis"
+// => "butterflies have two antennae and a proboscis"
 ```
 
 Notice that the `replace()` will replace only the first occurance:
