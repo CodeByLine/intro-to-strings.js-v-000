@@ -67,7 +67,7 @@ quote.replace("o", "*");
 // quote is now "xyl*phone phone home"
 ```
 
-`Replace()` can also take regex for the first parameter:
+The string class' `replace()` function can also take regex for the first parameter:
 
 ```javascript
 var phoneNumber = "5556768799";
