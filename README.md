@@ -13,7 +13,7 @@
 
 ## Concatenation
 
-Unlike Ruby, JavaScript doesn't come with a prior knowledge of how to interpolate a variable (remember, interpolation in Ruby looks like this: "#{variable_name}"). 
+Unlike Ruby, JavaScript doesn't come with a prior knowledge of how to interpolate a variable (remember, interpolation in Ruby looks like this: `"#{variable_name}"`). 
 
 Instead, when you want to combine several variables into one long string, you must concatenate.
 
@@ -104,7 +104,7 @@ console.log(word);
 
 ## Split
 
-The split() method splits a String object into an array of strings by separating the string into substrings.
+The `split()` method splits a String object into an array of strings by separating the string into substrings.
 
 ```javascript
 var longString = "Jan,Feb,Mar,Apr,May,Jun";
