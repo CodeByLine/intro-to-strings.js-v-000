@@ -96,6 +96,16 @@ The `slice()` method extracts a section of a string and returns a new string. It
 
 ```javascript
 var bushism = "They misunderestimated me.";
+var word = bushism.slice(5, 22);
+
+// the line below prints "misunderestimated"
+console.log(word); 
+```
+
+Like in Ruby, you can also use negative indices with strings:
+
+```javascript
+var bushism = "They misunderestimated me.";
 var word = bushism.slice(5, -4);
 
 // the line below prints "misunderestimated"
