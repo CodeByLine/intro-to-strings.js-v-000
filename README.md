@@ -58,7 +58,7 @@ To replace characters with new characters, you can use the `replace()` method. I
 // => "butterflies have two antennae and a proboscis"
 ```
 
-Notice that the `replace()` will replace only the first occurance:
+Notice that the `replace()` will replace only the first occurrence:
 
 ```javascript
 var quote = "xylophone phone home";
@@ -67,7 +67,7 @@ quote.replace("o", "*");
 // quote is now "xyl*phone phone home"
 ```
 
-The string class' `replace()` function can also take regex for the first parameter:
+The string class' `replace()` function can also take Regex for the first parameter:
 
 ```javascript
 var phoneNumber = "5556768799";
