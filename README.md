@@ -129,3 +129,5 @@ var months = longString.split(",");
 * [StackOverflow - What's the fastest way to convert String to Number in JavaScript?](http://stackoverflow.com/a/12862627/2890716)
 * [StackOverflow - Capitalize the first letter of string](http://stackoverflow.com/a/1026087/2890716)
 * [StackOverflow - Replacing all occurrences of a string in JavaScript](http://stackoverflow.com/a/1144788/2890716)
+
+<a href='https://learn.co/lessons/intro-to-strings.js' data-visibility='hidden'>View this lesson on Learn.co</a>
