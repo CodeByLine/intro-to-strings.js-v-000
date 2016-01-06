@@ -12,7 +12,7 @@ Feel free to open up the Developer Tools in Chrome or Firefox to play around wit
 
 ## Concatenation
 
-Unlike Ruby, JavaScript doesn't come with a prior knowledge of how to interpolate a variable (remember, interpolation in Ruby looks like this: `"#{variable_name}"`). 
+Unlike Ruby, JavaScript doesn't come with a prior knowledge of how to interpolate a variable (remember, interpolation in Ruby looks like this: `"Hi, my name is #{name}"`). 
 
 Instead, when you want to combine several variables into one long string, you must concatenate.
 
@@ -88,19 +88,18 @@ phoneNumber.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2 - $3');
 
 ## Turn String to Number
 
-There are a couple different ways to turn a string into a number. Here are a couple:
+Two different functions to turn are `parseInt(`) and `Number()`. The `Number` function creates a new number, while the `parseInt` function parses the string. Check out [this stack overflow post](http://stackoverflow.com/questions/4090518/what-is-the-difference-between-parseint-and-number) for more information. 
 
 ```javascript
-var x = "78";
-
-Number(x);
+Number("78");
 // => 78
-
-parseInt(x, 10);
-// => 78
-
 parseInt("78");
 // => 78
+Number("20px");
+// => NaN
+parseInt("20px");
+// => 20
+
 ```
 
 ## Slice
