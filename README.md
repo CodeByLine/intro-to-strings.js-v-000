@@ -46,7 +46,7 @@ console.log(species.length);
 
 ## Changing Case
 
-The two common functions to change the case of a string are `toUpperCase()`  and `toLowerCase()`.
+The two common functions to change the case of a string are `toUpperCase()`  and `toLowerCase()`. It's important to note that when you call a function that doesn't require a parameter, like `toUpperCase()` and `toLowerCase()` does need to be invoked with `()`. 
 
 ```javascript
 "I'm not shouting!!!".toUpperCase();
