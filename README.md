@@ -1,21 +1,27 @@
 # JavaScript Strings
 
-## Overview
+## Objectives
++ Use string concatenation
++ Use JS string convenience methods 
++ Convert string to number data type
 
-* Concatenation
-* Length
-* Changing Case
-* Replacing Characters
-* Turn String to Number
-* Slice
-* Split
-* Resources
+
+Just like in Ruby, JavaScript has a handle of convenience methods built into the language that allow us to easily manipulate and modify strings. You can read all about Strings in JS, and even more methods [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
+
+Feel free to open up the Developer Tools in Chrome or Firefox to play around with these methods.
 
 ## Concatenation
 
-Unlike Ruby, JavaScript doesn't come with a prior knowledge of how to interpolate a variable (remember, interpolation in Ruby looks like this: `"#{variable_name}"`). 
+Unlike Ruby, JavaScript doesn't come with a prior knowledge of how to interpolate a variable (remember, interpolation in Ruby looks like this: `"Hi, my name is #{name}"`). 
 
 Instead, when you want to combine several variables into one long string, you must concatenate.
+
+```js
+var name = "cricky";
+console.log("Hi my name is " + name);
+//this will print "Hi my name is cricky"
+```
+JavaScript does something unusual when you add a string with a number:
 
 ```javascript
 var hours = 10;
@@ -24,6 +30,8 @@ var species = "sloths";
 // the line below prints "sloths sleep 10 hours a day"
 console.log(species + " sleep " + hours + " hours a day");
 ```
+
+You'll notice in the example above, the variable `hours` is storing a number, while the rest of the sentence is a string. When adding a number and a string, JavaScript automatically transforms the number into a string.
 
 ## Length
 
@@ -38,7 +46,7 @@ console.log(species.length);
 
 ## Changing Case
 
-The two common functions to change the case of a string are `toUpperCase()`  and `toLowerCase()`.
+The two common functions to change the case of a string are `toUpperCase()`  and `toLowerCase()`. It's important to note that when you call a function that doesn't require a parameter, like `toUpperCase()` and `toLowerCase()` does need to be invoked with `()`. 
 
 ```javascript
 "I'm not shouting!!!".toUpperCase();
@@ -54,7 +62,9 @@ You may notice that there is no pre-built `capitalize()` method. To capitalize j
 To replace characters with new characters, you can use the `replace()` method. It works similarly to Ruby's `gsub` method in that the first parameter is the set of characters you would like to remove and the second is the string you would like to add instead.
 
 ```javascript
-"pandas have two compound eyes and a proboscis".replace("pandas", "butterflies");
+var sentence = "pandas have two compound eyes and a proboscis".replace("pandas", "butterflies");
+// => "butterflies have two compound eyes and a proboscis"
+sentence.replace("two compound eyes", "two antennae")
 // => "butterflies have two antennae and a proboscis"
 ```
 
@@ -78,16 +88,18 @@ phoneNumber.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2 - $3');
 
 ## Turn String to Number
 
-There are a couple different ways to turn a string into a number. Here are a couple:
+Two different functions to turn are `parseInt(`) and `Number()`. The `Number` function creates a new number, while the `parseInt` function parses the string. Check out [this stack overflow post](http://stackoverflow.com/questions/4090518/what-is-the-difference-between-parseint-and-number) for more information. 
 
 ```javascript
-var x = "78";
-
-Number(x);
+Number("78");
 // => 78
-
-parseInt(x, 10);
+parseInt("78");
 // => 78
+Number("20px");
+// => NaN
+parseInt("20px");
+// => 20
+
 ```
 
 ## Slice
@@ -95,8 +107,8 @@ parseInt(x, 10);
 The `slice()` method extracts a section of a string and returns a new string. It accepts one required parameter, the index to start on, and one optional parameter, the index to end on.
 
 ```javascript
-var bushism = "They misunderestimated me.";
-var word = bushism.slice(5, 22);
+var sentence = "They misunderestimated me.";
+var word = sentence.slice(5, 22);
 
 // the line below prints "misunderestimated"
 console.log(word); 
