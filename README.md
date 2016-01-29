@@ -130,4 +130,4 @@ var months = longString.split(",");
 * [StackOverflow - Capitalize the first letter of string](http://stackoverflow.com/a/1026087/2890716)
 * [StackOverflow - Replacing all occurrences of a string in JavaScript](http://stackoverflow.com/a/1144788/2890716)
 
-<a href='https://learn.co/lessons/intro-to-strings.js' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-strings.js' title='JavaScript Strings'>JavaScript Strings</a> on Learn.co and start learning to code for free.</p>
