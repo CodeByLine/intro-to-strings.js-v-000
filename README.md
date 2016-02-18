@@ -6,7 +6,7 @@
 + Convert string to number data type
 
 
-Just like in Ruby, JavaScript has a handle of convenience methods built into the language that allow us to easily manipulate and modify strings. You can read all about Strings in JS, and even more methods [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
+Just like in Ruby, JavaScript has a handful of convenience methods built into the language that allow us to easily manipulate and modify strings. You can read all about Strings in JS, and even more methods [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
 
 Feel free to open up the Developer Tools in Chrome or Firefox to play around with these methods.
 
