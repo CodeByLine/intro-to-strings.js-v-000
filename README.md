@@ -35,7 +35,7 @@ You'll notice in the example above, the variable `hours` is storing a number, wh
 
 ## Length
 
-Calling `length` on a string will return the number of characters in that string.
+Javascript strings have a `length` property that will return the number of characters in that string.  Note that this is not a function call.
 
 ```javascript
 var species = "mantis shrimp";
