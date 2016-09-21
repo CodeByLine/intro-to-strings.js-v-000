@@ -64,7 +64,7 @@ To replace characters with new characters, you can use the `replace()` method. I
 ```javascript
 var sentence = "pandas have two compound eyes and a proboscis".replace("pandas", "butterflies");
 // => "butterflies have two compound eyes and a proboscis"
-sentence.replace("two compound eyes", "two antennae")
+sentence.replace("two compound eyes", "two antennae");
 // => "butterflies have two antennae and a proboscis"
 ```
 
@@ -143,3 +143,5 @@ var months = longString.split(",");
 * [StackOverflow - Replacing all occurrences of a string in JavaScript](http://stackoverflow.com/a/1144788/2890716)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/intro-to-strings.js' title='JavaScript Strings'>JavaScript Strings</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/intro-to-strings.js'>Strings in JS</a> on Learn.co and start learning to code for free.</p>
