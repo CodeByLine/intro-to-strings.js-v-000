@@ -35,7 +35,7 @@ You'll notice in the example above, the variable `hours` is storing a number, wh
 
 ## Length
 
-Javascript strings have a `length` property that will return the number of characters in that string.  Note that this is not a function call.
+JavaScript strings have a `length` property that will return the number of characters in that string.  Note that this is not a function call.
 
 ```javascript
 var species = "mantis shrimp";
@@ -46,7 +46,7 @@ console.log(species.length);
 
 ## Changing Case
 
-The two common functions to change the case of a string are `toUpperCase()`  and `toLowerCase()`. It's important to note that when you call a function that doesn't require a parameter, like `toUpperCase()` and `toLowerCase()` does need to be invoked with `()`. 
+The two common functions to change the case of a string are `toUpperCase()`  and `toLowerCase()`. It's important to note that when you call a function that doesn't require a parameter, like `toUpperCase()` or `toLowerCase()`, the function still needs to be invoked with `()`.
 
 ```javascript
 "I'm not shouting!!!".toUpperCase();
@@ -77,7 +77,7 @@ quote.replace("o", "*");
 // quote is now "xyl*phone phone home"
 ```
 
-The string class' `replace()` function can also take Regex for the first parameter:
+The string class's `replace()` function can also take a regex for the first parameter:
 
 ```javascript
 var phoneNumber = "5556768799";
@@ -88,7 +88,7 @@ phoneNumber.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2 - $3');
 
 ## Turn String to Number
 
-Two different functions to turn are `parseInt(`) and `Number()`. The `Number` function creates a new number, while the `parseInt` function parses the string. Check out [this stack overflow post](http://stackoverflow.com/questions/4090518/what-is-the-difference-between-parseint-and-number) for more information. 
+Two different functions to turn a string into a number are `parseInt(`) and `Number()`. The `Number` function creates a new number, while the `parseInt` function parses the string. Check out [this stack overflow post](http://stackoverflow.com/questions/4090518/what-is-the-difference-between-parseint-and-number) for more information. 
 
 ```javascript
 Number("78");
@@ -99,7 +99,6 @@ Number("20px");
 // => NaN
 parseInt("20px");
 // => 20
-
 ```
 
 ## Slice
